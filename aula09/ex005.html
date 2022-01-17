@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>primeiros passos com o DOM</title>
+        <style>
+            body {
+                background-color: rgb( 68,125, 199);
+                color: white;
+                font:  normal 1.3em arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Iniciando estudos com DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+        <div>Clique em mim</div>
+                
+        <script>
+            var d = window.document.querySelectorAll('p')[0]
+            d.style.background = 'blue'
+
+            /*
+            ---Selecionando elementos por ClassName
+
+            var m = window.document.getElementsByClassName('msg') [0]
+            m.innerText = 'Olá'
+            */
+
+            /*
+            ---Selecionando Elementos por Name
+        
+            var d = window.document.getElementsByName('msg')[0]            
+            d.innerText = 'Olá'
+            */
+            
+            /*
+            --- Selecionando Elementos por ID
+
+            Utilizando variaveis.
+
+            var d = window.document.getElementById('msg')            
+            
+            d.style.background ='green'
+            d.innerText= ('Aguardando...')
+
+            UTilizando caminho direto.
+
+            window.document.getElementById('msg').innerText = ('Olá')
+            */            
+          
+            /* 
+            --- Selecionando elementos por TagName (Marca)
+
+            var p1 = window.document.getElementsByTagName('p')[1] 
+            var corpo = window.document.body
+
+            //corpo.style.background = 'black'
+            //window.confirm(p1.innerText)
+            //window.alert(p1.innerText)
+            //window.alert(p1.innerHTML)
+            //document.write(p1.innerText)
+            //document.write(p1.innerHTML)
+            //p1.style.color= 'blue'
+            //window.document.write('Esta escrito assim: '+ p1.innerText)
+            */
+            
+              /*   
+            --- Selecionando Elementos por DOM, utilizando a árvore DOM
+
+            //window.document.write('Olá Mundo!')
+            //window.document.write(window.document.charset)
+            //window.document.write(window.navigator.appName)
+            //window.document.write(window.document.URL)           
+            */
+
+            
+            
+            
+            
+        </script>
+    </body>
+    </html>
