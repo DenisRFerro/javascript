@@ -51,7 +51,11 @@
             if (nac == 'Brasil') {
                 res.innerText += ' Você é Brasileiro!'
             } else {
-                res.innerText += ' Você é Estrangeiro!'
+                    if (nac == 'brasil') {
+                    res.innerText += ' Você é Brasileiro!'
+                } else {
+                    res.innerText += ' Você é Estrangeiro!'
+                }
             }
             
 
@@ -60,3 +64,5 @@
     
 </body>
 </html>
+
+
