@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+    body {
+        font: normal 1em arial;
+        background-image: linear-gradient(to bottom, yellow, green);
+        background-attachment: fixed;
+        
+    }   
+    
+    div {
+        background-color: white;
+        padding: 10px 10px 100px 10px;
+        margin: 0px 80px ;
+        text-align: center;
+        width: auto; 
+    }
+
+    </style>
+</head>
+<body>
+   
+    <div>
+        <h1>Voce é Brasileiro?!</h1>
+        <p>Digite Seu pais de origem e descubra!</p>
+        <input type="text" id="nac">
+        <input type="button" value="Descubra!" onclick= clicar()>
+        <p id="res">
+
+        </p>
+        
+    </div>
+
+    <script>
+        function clicar() {
+            
+            var nac = window.document.querySelector('#nac')
+            var res = window.document.querySelector('p#res')
+            var nac = (nac.value)            
+            var t1 = nac.toUpperCase()
+
+            res.innerText = `Se você mora no(a): ${t1} ` 
+
+            if (nac == 'brasil') {
+                res.innerText += ' Você é Brasileiro!'
+            } else {
+                res.innerText += ' Você é Estrangeiro!'
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
