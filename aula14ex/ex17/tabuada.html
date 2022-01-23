@@ -10,22 +10,21 @@
 <body>
     <header>
         <h1>
-            Vamos Contar?
+            Tabuada
         </h1>
     </header>
     <section>
         <div>
-            <p>Inicio:<input type="number" id="inicio"></p>
+            <p>Numero: <input type="number" id="txtn"> 
 
-            <p>Fim:<input type="number"id="fim"> </p> 
 
-            <p>Passo:<input type="number" id="passo"></p> 
-            
-            <input type="button" value="Contar" onclick="contar() ">
-
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
+        
         </div>
-        <div id="res">
-
+        <div >
+            <select  id="seltab" size="10">
+                <option value="">Digite um Número</option>
+            </select>
         </div>
     </section>
     <footer>
