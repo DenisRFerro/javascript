@@ -26,7 +26,7 @@ if (f < i ) {
 //contagem progressiva
 for ( var i  ; i <= f ; i += p ) {
     
-    res.innerHTML += `${i} \u{1F449}`
+    res.innerHTML += `${i} \u{1F9DB}`
        
 }
     res.innerHTML += `\u{1F3C1}`
