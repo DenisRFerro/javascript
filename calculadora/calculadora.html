@@ -15,43 +15,50 @@
     <table id="frame">
        <th >
            <tr>
-               <td colspan="4" class="view1"></td>
+                <td colspan="4" >
+                    <p id="view1">
+                    </p>
+                </td>
            </tr>
            <tr>
-               <td colspan="4" class="view2"></td>
+                <td colspan="4" >
+                    <p id="view2">
+                       
+                     </p>
+                </td>
            </tr>
         </th>                 
            
         
             <tbody class="keyborad">
                 <tr>
-                    <td colspan="2"><button style="width: 94px;" id="clear">AC</button></td>
-                    <td><button class="oper">/</button></td>
-                    <td><button class="oper">*</button></td>
+                    <td colspan="2"><button style="width: 94px;" class="button" id="clear" onclick="clear()">AC</button></td>
+                    <td><button class="oper button" onclick= "insert('/')" >/</button></td>
+                    <td><button class="oper button" onclick= "insert('x')" >x</button></td>
                 
                 </tr>
                 <tr>
-                    <td><button class="num">7</button></td>
-                    <td><button class="num">8</button></td>
-                    <td><button class="num">9</button></td>
-                    <td><button class="oper">-</button></td>
+                    <td> <button class="num button" onclick="insert('7')">7 </button></td>
+                    <td><button class="num button" onclick="insert('8')">8</button></td>
+                    <td><button class="num button" onclick="insert('9')">9</button></td>
+                    <td><button class="oper button" onclick="insert('-')">-</button></td>
                 
                 </tr>
                 <tr>
-                    <td><button class="num">4</button></td>
-                    <td><button class="num">5</button></td>
-                    <td><button class="num">6</button></td>
-                    <td ><button  class="oper">+</button></td>
+                    <td><button class="num button" onclick="insert('4')">4</button></td>
+                    <td><button class="num button" onclick="insert('5')">5</button></td>
+                    <td><button class="num button" onclick="insert('6')">6</button></td>
+                    <td ><button  class="oper button" onclick="insert('+')">+</button></td>
                 </tr>
                 <tr>
-                    <td><button class="num">1</button></td>
-                    <td><button class="num">2</button></td>
-                    <td><button class="num" >3</button></td>
-                    <td rowspan="2"><button id="res">=</button></td>
+                    <td><button class="num button" onclick="insert('1') ">1</button></td>
+                    <td><button class="num button" onclick="insert('2') ">2</button></td>
+                    <td><button class="num button"  onclick="insert('3') ">3</button></td>
+                    <td rowspan="2"><button class="button" id="res" onclick="res() ">=</button></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button style="width: 94px;" class="num">0</button></td>
-                    <td><button  class="dot">,</button></td>
+                    <td colspan="2"><button style="width: 94px;" class="num button" onclick="insert('0') ">0</button></td>
+                    <td><button  class="dot button" onclick="insert(',') ">,</button></td>
                 </tr>
             </tbody>
     
