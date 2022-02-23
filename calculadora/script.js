@@ -1,5 +1,5 @@
-const resultado = document.querySelector('#view1')
-const adicionar = document.querySelector('#view2')
+
+const adicionar = document.querySelector('#view1')
 
 
 function insert(value){
@@ -24,11 +24,12 @@ function deleta() {
 function res() {    
     let operation =adicionar.innerHTML    
     if ( operation){
-        resultado.innerHTML = eval(operation)
-        adicionar.innerHTML = ''
+        adicionar.innerHTML = eval(operation)
+       
     } else {
         window.alert('Erro: Insert Numbers')
     }
     
 } 
+
 
