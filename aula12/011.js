@@ -1,4 +1,4 @@
-var idade = 65
+var idade = 50
 console.log (`Com ${idade} anos de idade o: `)
 if (idade < 16) {
     console.log ('Não vota!')    
@@ -8,3 +8,17 @@ if (idade < 16) {
     console.log ('Voto obrigatório')
     
 }
+
+
+//Idade 
+
+//var idade = 100
+
+// console.log (`Com ${idade} anos de idade voce é :`)
+// if (idade >= 18 && idade < 100) {
+//     console.log ('Maior de idade')    
+// } else if (idade >= 100 ) {
+//     console.log("Pré Historico!")
+// } else {
+//     console.log ('Menor de idade!')    
+// }
